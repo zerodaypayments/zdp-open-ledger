@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="io.zdp.open.ledger" default="COPY_STATIC">
+
+	<property name="tomcat.home" value="C:/tools/apache-tomcat-8.5.4"/>
+	<property name="app.name" value="ledger"/>
+
+	<target name="start_tomcat">
+		<exec dir="${tomcat.home}/bin/" executable="${tomcat.home}/bin/s.bat" spawn="true" />
+	</target>
+
+
+	<target name="COPY_STATIC">
+
+		<property name="INSTALL_ROOT" value="${tomcat.home}/webapps/${app.name}"  />
+
+		<copy todir="${INSTALL_ROOT}/" verbose="true">
+			<fileset dir="src/main/webapp"/>
+		</copy>
+
+		<copy todir="${INSTALL_ROOT}/WEB-INF/classes" verbose="true">
+			<fileset dir="target/classes"/>
+		</copy>
+
+	</target>
+	
+	<target name="REDEPLOY">
+
+		<touch file="${tomcat.home}/webapps/${app.name}/WEB-INF/web.xml"/>
+
+	</target>
+</project>

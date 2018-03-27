@@ -1,0 +1,54 @@
+html, body {
+	background: black;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.pure-g [class*=pure-u] {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#particles-js {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+#container, #footer {
+	z-index: 100;
+}
+
+input, .pure-input-1 {
+	z-index: 100 !important;
+	position: relative;
+	color: black;
+}
+
+.pure-menu {
+	z-index: 100 !important;
+	position: relative;
+}
+
+.button-zdp {
+	background: rgb(255, 168, 0);
+	color: white;
+}
+
+button, .pure-button, pure-input-1-2 {
+	z-index: 100 !important;
+	position: relative;
+}
+
+#footer {
+	text-align: center;
+	font-size: 12px;
+	margin-top: 30px;
+	color: #444;
+}
+
+.pure-img {
+	display: inline;
+}
