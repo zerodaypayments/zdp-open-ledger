@@ -7,5 +7,4 @@
 
 	<jsp:include page="../common/search-panel.jsp" />	
 
-
 </page:apply-decorator>

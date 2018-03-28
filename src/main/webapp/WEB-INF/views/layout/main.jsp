@@ -51,12 +51,12 @@
 
 		<div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
 		    <span class="pure-menu-heading"> <img src="<c:url value='/static/images/logo-white.png'/>" /> 
-		    	Open Ledger
 		    </span>
 		    <ul class="pure-menu-list">
-		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Transfer</a></li>
-		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Accounts</a></li>
-		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Transactions</a></li>
+		    	<li class="pure-menu-item"><a href="<c:url value='/index.html'/>" class="pure-menu-link">Home</a></li>
+		        <li class="pure-menu-item"><a href="<c:url value='/transfer.html'/>" class="pure-menu-link">Make a transfer</a></li>
+		        <li class="pure-menu-item"><a href="<c:url value='/wallet/new.html'/>" class="pure-menu-link">Create new wallet</a></li>
+		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Check balance</a></li>
 		    </ul>
 		</div>
 		

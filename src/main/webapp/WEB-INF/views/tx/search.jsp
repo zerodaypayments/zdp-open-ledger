@@ -5,6 +5,13 @@
 
 <page:apply-decorator title="Transaction details - ZDP Open Ledger" name="main">
 
+	
+	<c:if test="${tx==null}">
+		<div style="text-align: center;">
+			<h2>Sorry, the transaction was not found</h2>
+		</div>
+	</c:if>	
+
 	<c:if test="${tx!=null}">
 	
 		<div class="pure-g">
@@ -63,5 +70,12 @@
 		</div>
 				
 	</c:if>
+	
+	<div style="background:#333;">
+		<jsp:include page="../common/search-panel.jsp" />
+		
+		<br>
+	</div>
+	
 
 </page:apply-decorator>
