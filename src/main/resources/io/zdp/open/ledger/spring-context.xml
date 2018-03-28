@@ -12,7 +12,7 @@
 
 	<context:property-placeholder ignore-resource-not-found="false" ignore-unresolvable="true" location="classpath:/io/zdp/open/ledger/app.properties" />
 
-	<context:component-scan base-package="io.zdp.open.ledger.service" />
+	<context:component-scan base-package="io.zdp.open.ledger.service,io.zdp.client" />
 
 	<context:annotation-config />
 

@@ -50,7 +50,9 @@
 	<div id="container">
 
 		<div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
-		    <span class="pure-menu-heading"> <img src="<c:url value='/static/images/logo-white.png'/>" /> Open Ledger</span>
+		    <span class="pure-menu-heading"> <img src="<c:url value='/static/images/logo-white.png'/>" /> 
+		    	Open Ledger
+		    </span>
 		    <ul class="pure-menu-list">
 		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Transfer</a></li>
 		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Accounts</a></li>
