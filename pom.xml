@@ -31,7 +31,6 @@
 			<scope>provided</scope>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
@@ -56,6 +55,11 @@
 			<version>1.7.25</version>
 		</dependency>
 
+		<dependency>
+			<groupId>io.zdp</groupId>
+			<artifactId>io.zdp.client</artifactId>
+			<version>1.0</version>
+		</dependency>
 	</dependencies>
 
 </project>
