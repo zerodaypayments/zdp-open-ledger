@@ -21,7 +21,7 @@ html, body {
 	z-index: 100;
 }
 
-input, .pure-input-1 {
+input, .pure-input-1, textarea {
 	z-index: 100 !important;
 	position: relative;
 	color: black;

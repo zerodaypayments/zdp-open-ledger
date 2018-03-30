@@ -36,13 +36,17 @@ public class SearchAction {
 
 				try {
 					GetTransactionDetailsResponse tx = zdp.getTransactionDetails(q);
-					mav.addObject("tx", tx);
+
+					if (StringUtils.isNotBlank(tx.getTxUuid())) {
+						mav.addObject("tx", tx);
+					}
+
 				} catch (Exception e) {
 					log.error("Error: ", e);
 				}
 
 			} else if (q.startsWith("zdp")) {
-				
+
 				mav = new ModelAndView("tx/search");
 
 				try {
@@ -52,11 +56,9 @@ public class SearchAction {
 					log.error("Error: ", e);
 				}
 
-				
 			} else {
 				mav = new ModelAndView("tx/search");
 			}
-			
 
 		} else {
 			mav = new ModelAndView("index/index");

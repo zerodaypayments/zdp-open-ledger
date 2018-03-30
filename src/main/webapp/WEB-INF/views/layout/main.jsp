@@ -55,8 +55,8 @@
 		    <ul class="pure-menu-list">
 		    	<li class="pure-menu-item"><a href="<c:url value='/index.html'/>" class="pure-menu-link">Home</a></li>
 		        <li class="pure-menu-item"><a href="<c:url value='/transfer.html'/>" class="pure-menu-link">Make a transfer</a></li>
-		        <li class="pure-menu-item"><a href="<c:url value='/wallet/new.html'/>" class="pure-menu-link">Create new wallet</a></li>
-		        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Check balance</a></li>
+		        <li class="pure-menu-item"><a href="<c:url value='/wallet/index.html'/>" class="pure-menu-link">Create new wallet</a></li>
+		        <li class="pure-menu-item"><a href="<c:url value='/wallet/balance.html'/>" class="pure-menu-link">Check balance</a></li>
 		    </ul>
 		</div>
 		
@@ -83,6 +83,11 @@
 			particlesJS.load('particles-js', '<c:url value="/static/main/config/particlesjs-config.json"/>', function() {
 			  console.log('callback - particles.js config loaded');
 			});
+			
+			if (typeof init !== "undefined") {
+				init();
+			}
+			
 		});	
 	</script>
 	
