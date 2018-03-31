@@ -15,38 +15,30 @@
 		   	
 		   	<hr>
 	    
-	    
-			<form class="pure-form pure-form-aligned">
+			<form class="pure-form pure-form-aligned" method="post" action="<c:url value='/transfer.html'/>">
 			    <fieldset>
 			        <div class="pure-control-group">
 			            <label for="privateKey">Wallet key:</label>
-			            <input id="privateKey" name="privateKey" type="password">
-           	            <span class="pure-form-message-inline">Restore wallet</span>
+			            <input id="privateKey" name="privateKey" type="text">
 			            
 			        </div>
 			
 			        <div class="pure-control-group">
-			            <label for="fromAddress">From address:</label>
-			            <input name="fromAddress" id="fromAddress" type="text">
-                        <span class="pure-form-message-inline">Generate an address</span>
-			            
+			            <label for="to">To address:</label>
+			            <input name="to" id="to" type="text">
 			        </div>
-			
+
 			        <div class="pure-control-group">
-			            <label for="email">Email Address</label>
-			            <input id="email" type="email" placeholder="Email Address">
+			            <label for="amount">Amount:</label>
+			            <input name="amount" id="amount" type="text">
 			        </div>
-			
+
 			        <div class="pure-control-group">
-			            <label for="foo">Supercalifragilistic Label</label>
-			            <input id="foo" type="text" placeholder="Enter something here...">
+			            <label for="memo">Memo:</label>
+			            <input name="memo" id="memo" type="text">
 			        </div>
-			
+
 			        <div class="pure-controls">
-			            <label for="cb" class="pure-checkbox">
-			                <input id="cb" type="checkbox"> I've read the terms and conditions
-			            </label>
-			
 			            <button type="submit" class="pure-button zdp-button">Submit</button>
 			        </div>
 			    </fieldset>

@@ -7,7 +7,7 @@
     
     <div class="pure-u-1 pure-u-md-1-3" style='text-align: center;'>
     
-    	<h1>ZDP Open Ledger</h1>
+    	<h1>Transaction search</h1>
     	
     	<h4>Search by transaction uuid or address:</h4>
     	

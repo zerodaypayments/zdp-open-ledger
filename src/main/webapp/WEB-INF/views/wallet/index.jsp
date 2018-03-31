@@ -11,7 +11,7 @@
 		    
 		    <div class="pure-u-1 pure-u-md-1-3" style='text-align: center;'>
 	    
-   			   	<h1>New Wallet</h1>
+   			   	<h1>Wallet</h1>
 
 				<h4>
 					Write down the private key or the list of words (which you can use to re-generate the private key)

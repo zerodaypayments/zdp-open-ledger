@@ -36,8 +36,10 @@
 	<!--<![endif]-->	
 		
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-		
+	
 	<link rel="stylesheet" href="<c:url value='/static/main/css/main.css'/>">
+		
+	<link rel="stylesheet" href="<c:url value='/static/font-awesome-4.7.0/css/font-awesome.min.css'/>">
 	
   </head>
   
@@ -56,6 +58,7 @@
 		    	<li class="pure-menu-item"><a href="<c:url value='/index.html'/>" class="pure-menu-link">Home</a></li>
 		        <li class="pure-menu-item"><a href="<c:url value='/transfer.html'/>" class="pure-menu-link">Make a transfer</a></li>
 		        <li class="pure-menu-item"><a href="<c:url value='/wallet/index.html'/>" class="pure-menu-link">Create new wallet</a></li>
+		        <li class="pure-menu-item"><a href="<c:url value='/wallet/generate.html'/>" class="pure-menu-link">Generate an address</a></li>
 		        <li class="pure-menu-item"><a href="<c:url value='/wallet/balance.html'/>" class="pure-menu-link">Check balance</a></li>
 		    </ul>
 		</div>
