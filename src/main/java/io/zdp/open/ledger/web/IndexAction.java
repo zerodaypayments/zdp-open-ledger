@@ -31,9 +31,11 @@ public class IndexAction {
 	}
 
 	@GetMapping(path = "/data/listTransactions")
-	public @ResponseBody ListTransactionsResponse listTransactions() {
+	public ModelAndView listTransactions() {
 
 		ListTransactionsResponse listTransactions = new ListTransactionsResponse();
+
+		ModelAndView mav = new ModelAndView("index/txList");
 
 		try {
 			ListAllTransactionsRequest txReq = new ListAllTransactionsRequest();
@@ -42,12 +44,13 @@ public class IndexAction {
 
 			listTransactions = zdp.listTransactions(txReq);
 
+			mav.addObject("txList", listTransactions);
+
 		} catch (Exception e) {
 			log.error("Error: ", e);
-			return new ListTransactionsResponse();
 		}
 
-		return listTransactions;
+		return mav;
 	}
 
 	@GetMapping(path = "/data/countAccounts")

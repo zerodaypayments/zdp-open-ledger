@@ -39,15 +39,8 @@
 	<script type="text/javascript">
 		
 		function init() {
-			$.get( "<c:url value='/data/listTransactions.html'/>", function( data ) {
-				var html="<ul id='tx-list'>";
-				$.each( data.transactions, function( i, tx ){
-					html+="<li>";
-					html+="<a class='pure-button pure-button-primary' href='<c:url value="/search.html?q="/>"+tx.uuid+"'>"+tx.uuid+"</a>";
-					html+="</li>";
-				});	
-				html+="</ul>";
-				$("#tx-container").html("<h3>Recent transactions:</h3>" + html);
+			$.get( "<c:url value='/data/listTransactions.html'/>", function( html ) {
+				$("#tx-container").html(html);
 			});			
 		}
 	
